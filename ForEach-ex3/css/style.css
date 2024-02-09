@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+:root{
+    --c-navy-10: #2D3250;
+    --c-navy-30: #424769;
+    --c-navy-60: #7077A1;
+    --c-orange-60: #F6B17A;
+    --gradient-navy-10-and-navy-60: linear-gradient(80deg, var(--c-navy-10), var(--c-navy-30));
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background: var(--gradient-navy-10-and-navy-60) no-repeat center/100%;
+    height: 100%;
+}
+
+header{
+    padding: 1rem;
+
+    h3{
+        font-weight: 100;
+        font-size: 30px;
+        margin-left: 1rem;
+        padding: 0 1rem;
+        border-left: 5px solid var(--c-orange-60);
+    }
+}
+
+section{
+    height: 100vh;
+    gap: 2rem;
+
+    #form{
+        display: flex;
+        flex-direction: column;
+        
+        margin: 0 2rem;
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            padding: 1rem 0;
+
+            border: none;
+        }
+
+        label{
+            opacity: 50%;
+        }
+
+        input, textarea{
+            background: var(--c-navy-10);
+            border: 1px solid var(--c-navy-60);
+            border-radius: 5px;
+            padding: .5rem;
+            color: white;
+        }
+
+
+    }
+
+    button{
+        padding: .5rem;
+        
+        color: white;
+        background-color: var(--c-navy-10);
+        border: 1px solid var(--c-navy-60);
+        border-radius: 5px;
+
+        &&:hover{
+            cursor: pointer;
+            background: var(--c-navy-60);
+        }
+    }
+
+    #form-exibe-mensagem{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+        padding: 0 2rem;
+        
+        select{
+            padding: .5rem;
+
+            background: var(--c-navy-60);
+            color: white;
+            border: none;
+            border-radius: 5px;
+
+            option{
+                padding: 1rem .5rem;
+            }
+        }
+    }
+}

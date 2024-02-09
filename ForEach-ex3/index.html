@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h3>Lista de saudações</h3>
+  </header>
+  <section>
+    <form id="form">
+      <fieldset>
+        <label for="set-nome">Nome</label>
+        <input type="text" id="set-nome">
+      </fieldset>
+      <fieldset>
+        <label for="set-mensagem">Mensagem</label>
+        <textarea id="set-mensagem" cols="30" rows="10"></textarea> 
+      </fieldset>
+      <button type="submit" id="btn-salvar">Salvar</button>
+    </form>
+    <form id="form-exibe-mensagem">
+      <select id="nomes">
+        <option selected>Seleione o nome a ser exibido na mensagem</option>
+      </select>
+      <select id="mensagens">
+        <option value="" selected>Selecione a mensagem</option>
+      </select>
+      <button type="submit" id="btn-exibir-mensagem">Exibir menssagem</button>
+    </form>
+  </section>
+  
+  <div class="container__mensagem-exibida">
+    <p></p>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
